@@ -1,0 +1,5 @@
+4
+   xx= 2
+yy = 5 
+   zz = xx
+ cd= xx+ yy + zz

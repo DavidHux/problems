@@ -1,0 +1,15 @@
+14
+cd ..
+adddir tencent1
+adddir tencent2
+adddir tencent1
+undo
+addfile tencent3
+addfile tencent4
+addfile tencent3
+undo
+undo
+cd tencent1
+undo
+undo
+undo

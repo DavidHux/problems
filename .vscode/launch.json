@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "Bash-Debug (select script from list of sh files)",
+            "cwd": "${workspaceFolder}",
+            "program": "${command:SelectScriptName}",
+            "args": []
+        },
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [
+                "<",
+                "testcase/${fileBasenameNoExtension}.tc"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            }
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - javatest",
+            "request": "launch",
+            "mainClass": "javatest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticBlockTest",
+            "request": "launch",
+            "mainClass": "StaticBlockTest"
+        }
+    ]
+}
